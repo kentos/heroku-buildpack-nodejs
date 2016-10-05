@@ -7,8 +7,7 @@ create_default_env() {
 
 list_node_config() {
   echo ""
-  # printenv | grep ^NPM_CONFIG_ || true
-  # printenv | grep ^NODE_ || true
+  printenv
 
   if [ "$NPM_CONFIG_PRODUCTION" = "true" ] && [ "$NODE_ENV" != "production" ]; then
     echo ""
